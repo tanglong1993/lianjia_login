@@ -1,0 +1,4 @@
+## 简介
+使用selenium登录链家，获取cookie，然后requests使用这个cookie爬取需要登录才能获取的网页
+
+重点需要关注cookie的转换，将selenium返回的cookie转换成字典，再将字典转换成requests库能接收的cookiejar类型
