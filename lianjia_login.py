@@ -14,8 +14,8 @@ browser.get(url=url)
 
 browser.find_element_by_class_name('reg').click()
 browser.find_element_by_class_name('tologin').click()
-browser.find_element_by_xpath('//*[@id="con_login_user"]/form/ul/li[1]/input').send_keys('15711026959')
-browser.find_element_by_xpath('//*[@id="con_login_user"]/form/ul/li[2]/input').send_keys('tanglong1214')
+browser.find_element_by_xpath('//*[@id="con_login_user"]/form/ul/li[1]/input').send_keys('*****') #输入用户名
+browser.find_element_by_xpath('//*[@id="con_login_user"]/form/ul/li[2]/input').send_keys('*****') #输入密码
 browser.find_element_by_class_name('login-user-btn').click()
 captcha = input('请输入验证码：')
 browser.find_element_by_xpath('//*[@id="con_login_user"]/form/ul/li[3]/input').send_keys(captcha)
